@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #6a8caf;
+            color: #fff;
+            padding: 1.5em 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            position: relative;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        nav .menu-icon {
+            position: absolute;
+            right: 30px; /* Increased value to move the icon further to the right */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Adjust for half of the icon's height */
+            font-size: 1.8em;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        nav .dropdown-content {
+            display: none; /* Initially hidden */
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            z-index: 1000; /* Ensure dropdown is above other elements */
+        }
+
+        nav .dropdown-content a {
+            display: block;
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        nav .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #4a5f76;
+            border-bottom: 2px solid #d9e4f1;
+            padding-bottom: 5px;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 100px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            background-color: #f5f7fa;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 8px 18px;
+            color: #fff;
+            background-color: #6a8caf;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            background-color: #4a5f76;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #4a5f76;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .social-icons a:hover {
+            color: #6a8caf;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Emil Hashan | IOT Developer</h1>
+        <nav>
+            <i class="fas fa-bars menu-icon" id="menuIcon"></i>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <img src="https://cdnb.artstation.com/p/assets/images/images/046/105/347/large/vi-t-thai-t-243671532-10165559953660608-1192125926056129024-n.jpg?1644318536" alt="Profile picture">
+            <p>Hi, I'm Emil, a passionate developer skilled in Embedded software engineering and Internet of Things .</p>
+            <div class="card">
+                <p>Education : <a>test test test test</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" title="LinkedIn Profile">
+                        <span class="fab fa-linkedin"></span>
+                    </a>
+                    <a href="https://github.com/your-username" target="_blank" title="GitHub Profile">
+                        <span class="fab fa-github"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <p><strong>HTML/CSS</strong></p>
+                    <p>Web development technologies for building user interfaces.</p>
+                </div>
+                <div class="card">
+                    <p><strong>Python</strong></p>
+                    <p>Flask, Django, Pygame frameworks for web and game development.</p>
+                </div>
+                <div class="card">
+                    <p><strong>C#</strong></p>
+                    <p>Backend services and object-oriented programming.</p>
+                </div>
+                <div class="card">
+                    <p><strong>Arduino</strong></p>
+                    <p>Arduino programming and circuit building.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Notable projects:</p>
+            <ul>
+                <li><a href="#" class="button">Project 1</a> - Description of project 1.</li>
+                <li><a href="#" class="button">Project 2</a> - Description of project 2.</li>
+                <li><a href="#" class="button">Project 3</a> - Description of project 3.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>
+                Email: <a href="mailto:emillocal@outlook.com">emillocal@outlook.com</a>
+                <br>
+                Discord:<a href="https://discord.com/">DiscordChat</a>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Developer Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        // Toggle dropdown visibility on menu icon click
+        menuIcon.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent click event from bubbling up
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Close dropdown if clicked outside
+        window.addEventListener('click', function(event) {
+            if (!menuIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
